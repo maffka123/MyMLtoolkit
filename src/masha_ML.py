@@ -27,7 +27,7 @@ def getXY(data,testvar,toremove=[],tested=False):
     '''Converts df into dependent and independent variables
        removes provided columns
        also removes vars after testing for importance
-    ''''
+    '''
     c = data.columns.tolist()
     c.remove(testvar)
     c = list(set(c).difference(set(toremove)))
